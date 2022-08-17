@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact-form.html">Contact</a></li>
+                <li><a href="survey-form.html">Survey</a></li>
+                <li><a href="tour-registration.html">Tour Registration</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <form action="#">
+                <div class="form-field">
+                <label for="tour">Which Tour did you take?</label>
+                <select name="tourname" id="tourname">
+                    <optgroup>
+                    <option value="Yosemite">Yosemite National Park</option>
+                    <option value="Redwood">Redwood National Park</option>
+                    <option value="Joshua">Joshua Tree National Park</option>
+                    <option value="Channel">Channel Islands National Park</option>
+                    <option value="Seqouia">Seqouia National Park</option>
+                    <option value="Pinnacles">Pinnacles National Park</option>
+                    </optgroup>
+                </select>
+                </div>
+                <div class="form-field">
+                    <label for="recommendtour">Would you recommend this tour to a family member?</label>
+                    <input type="radio" name="recommendtour" id="recommnedyes" value="yes">
+                    <label for="recommendyes">Yes</label>
+                    <input type="radio" name="recommendtour" id="recommnedno" value="no">
+                    <label for="recommendno">No</label>
+                </div>
+                <div class="form-field">
+                    <label for="guide">How would you rate your tour guide?</label>
+                    <label for="bad">Dissatisfied</label>
+                    <input type="radio" name="guide" id="bad" value="bad">
+                    <label for="decent">Satisfactory</label>
+                    <input type="radio" name="guide" id="decent" value="decent">
+                    <label for="good">The tour guide was good!</label>
+                    <input type="radio" name="guide" id="good" value="good">
+                    <label for="amazing">Amazing!</label>
+                    <input type="radio" name="guide" id="amazing" value="amazing">
+                    <label for="what">There was a tour guide?</label>
+                    <input type="radio" name="guide" id="what" value="what">
+                </div>
+                <div class="form-field">
+                    <label for="repeat">Would you take this tour again or go to a different one?</label>
+                    <label for="repeatyes">Yes</label>
+                    <input type="radio" name="repeat" id="repeatyes" value="repeatyes">
+                    <label for="repeatno">No</label>
+                    <input type="radio" name="repeat" id="repeatno" value="repeatno">
+                </div>
+                <div class="form-field">
+                    <label for="favepart">Favorite Part of the Tour?</label>
+                    <textarea name="favpart" id="favpart"></textarea>
+                </div>
+                <div>
+                    <button type="button">Submit</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</html>

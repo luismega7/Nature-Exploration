@@ -1,0 +1,38 @@
+body {
+    background-color: #FFE4B5;
+}
+
+.container {
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    align-content: center;
+    flex-basis: 400px;
+}
+
+a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+#nav li a:hover, a:active {
+    color: #191970;
+    text-decoration: underline;
+}
+
+button:hover {
+    background-color: 		#228B22;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    flex-grow: 2;
+}
