@@ -21,19 +21,6 @@ ul {
     padding: 0;
 }
 
-.form-field {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap-reverse;
-    flex-grow: 2;
-}
-
-/* img {
- height: 300px;
- width: 400px;
-} */
-
 .button_1 {
     height: 38px;
     background-color: orange;
@@ -128,21 +115,20 @@ header .current a {
     width: 250px;
 }
 
-/*Boxes*/
-
-#boxes .box {
-    margin-top: 20px;
-    float: left;
-    width: 30%;
-    padding: 10px;
+#boxes {
+    display: block;
+    justify-content: center;
+    align-items: center;
+ }
+#boxes .container .box {
     text-align: center;
-    font-size: 14px;
 }
 
-#boxes .box img {
-    width: 400px;
-    height: 600px;
-}    
+.box > img {
+    object-fit: contain;
+    width: 30%;
+    height: 30%;
+}
 
 footer {
     padding: 20px;
@@ -150,4 +136,92 @@ footer {
     color: black;
     background-color: #AFEEEE;
     text-align: center;
+}
+
+form {
+    padding: 30px 40px;
+}
+
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.form-field {
+    margin-bottom: 10%;
+    padding-bottom: 15%;
+    position: relative;
+    align-items: center;
+}
+
+.form-field label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-field input {
+    border: 3px solid #f0f0f0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.form-field textarea {
+    border: 3px solid #f0f0f0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.form-field select {
+    border: 3px solid #f0f0f0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.form-field input:focus {
+    outline: 0;
+    border-color: red;
+}
+
+.form-field select:focus {
+    outline: 0;
+    border-color: red;
+}
+
+.form-field textarea:focus {
+    outline: 0;
+    border-color: red;
+}
+
+button {
+    cursor: pointer;
+    background-color: orange;
+    border: 2px solid;
+    border-radius: 5px;
+    color: white;
+    display: block;
+    font-size: 14px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+option {
+    border: 3px solid #f0f0f0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
 }
